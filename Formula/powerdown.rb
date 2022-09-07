@@ -5,21 +5,21 @@
 class Powerdown < Formula
   desc "CLI interface to the EskomSePush API."
   homepage "https://github.com/richardwooding/powerdown"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.3/powerdown_1.0.3_Darwin_arm64.tar.gz"
-      sha256 "2cd0ff7ffceb477ec8f7a927d2b3cbb92250502449f694280b3ed852a2a56af0"
+      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.4/powerdown_1.0.4_Darwin_arm64.tar.gz"
+      sha256 "02f063b631870a43c319ca8c241ab726ad2b2f4e25c0af6600bdf32d743db0c1"
 
       def install
         bin.install "powerdown"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.3/powerdown_1.0.3_Darwin_x86_64.tar.gz"
-      sha256 "c729f2d5a7fd31c1a22e072c94b02ca22934fa873f02f4168b61fc13a4620566"
+      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.4/powerdown_1.0.4_Darwin_x86_64.tar.gz"
+      sha256 "ae6ff6d7614b24f54e2841a07d7783bffa957123abc49df91f3f316fdd505e80"
 
       def install
         bin.install "powerdown"
@@ -29,16 +29,16 @@ class Powerdown < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.3/powerdown_1.0.3_Linux_arm64.tar.gz"
-      sha256 "38166b7710fbd70b82bdd09bf67fa3af5f77ec6e1b0cf2252f6d196dd601d3ca"
+      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.4/powerdown_1.0.4_Linux_arm64.tar.gz"
+      sha256 "a4c1c6639dab0453ee87ac83dc4df5044e61b65bdccac2a4b2933865a82e0cc5"
 
       def install
         bin.install "powerdown"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.3/powerdown_1.0.3_Linux_x86_64.tar.gz"
-      sha256 "e076a19068c30778d1f0d19a06312016bbe374f938a79b5b8442cc524ac07c3b"
+      url "https://github.com/richardwooding/powerdown/releases/download/v1.0.4/powerdown_1.0.4_Linux_x86_64.tar.gz"
+      sha256 "ba119404e781b66b4a434b6d5a469cac682539542085521287b63d46e969e33f"
 
       def install
         bin.install "powerdown"
